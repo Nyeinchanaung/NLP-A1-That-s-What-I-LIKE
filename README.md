@@ -19,17 +19,18 @@
 - 02-Word2VecNegSampling.ipynb
 - 03-GloveScratch.ipynb
 - 04-GloVeGensim.ipynb
-2) data (training and testing data file)
+2) `data` folder(training and testing data file)
 - word-test-semantic.txt for semantic data
 - word-test-syntatic.txt for syntatic data
 - wordsim353_sim_rel > wordsim_similarity_goldstandard.txt for similarity testing
-3) The 'app' folder include 
+3) 'app' folder  
 - app.py (streamlit)
 - `models` folder which contains four model exports and their metadata files.
  
 ## How to run
- - clone the repo
- - open folder
+ - Clone the repo
+ - Open the project
+ - Open the `app` folder
  - `streamlit run app.py`
  - app should be up and run on `http://localhost:8501/`
 
