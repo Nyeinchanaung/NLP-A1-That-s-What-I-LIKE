@@ -1,6 +1,6 @@
 # NLP-A1-That-s-What-I-LIKE
-AT82.05 Artificial Intelligence: Natural Language Understanding (NLU)
-Assignment 1: That’s What I LIKE
+- Assignment 1: That’s What I LIKE
+- AT82.05 Artificial Intelligence: Natural Language Understanding (NLU)
 
 - [Student Information](#student-information)
 - [Files Structure](#files-structure)
@@ -11,28 +11,31 @@ Assignment 1: That’s What I LIKE
 ## Student Information
  - Name: Nyein Chan Aung
  - ID: st125553
+ - Class: DSAI
 
 ## Files Structure
- - The Jupytor notebook files
- -- 01-Word2VecSkipgram.ipynb
- -- 02-Word2VecNegSampling.ipynb
- -- 03-GloveScratch.ipynb
- -- 04-GloVeGensim.ipynb
- - data (training and testing data file)
- -- word-test-semantic.txt for semantic data
- -- word-test-syntatic.txt for syntatic data
- -- wordsim353_sim_rel > wordsim_similarity_goldstandard.txt for similarity testing
- - The 'app' folder include 
- -- app.py (streamlit)
- -- `models` folder which contains four model exports and their metadata files.
+1) The Jupytor notebook files
+- 01-Word2VecSkipgram.ipynb
+- 02-Word2VecNegSampling.ipynb
+- 03-GloveScratch.ipynb
+- 04-GloVeGensim.ipynb
+2) data (training and testing data file)
+- word-test-semantic.txt for semantic data
+- word-test-syntatic.txt for syntatic data
+- wordsim353_sim_rel > wordsim_similarity_goldstandard.txt for similarity testing
+3) The 'app' folder include 
+- app.py (streamlit)
+- `models` folder which contains four model exports and their metadata files.
  
 ## How to run
+ - clone the repo
  - open folder
- - streamlit run app.py
+ - `streamlit run app.py`
  - app should be up and run on `http://localhost:8501/`
 
 ## Dataset
-- I used `brown` dataset (category 'news') from `nltk`.
+- `brown` dataset (category 'news') from `nltk`.
+- `epho` 1000
 
  ## Evaluation
 
