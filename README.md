@@ -1,8 +1,10 @@
 # NLP-A1-That-s-What-I-LIKE
 ## Assignment 1: That’s What I LIKE
 ## AT82.05 Artificial Intelligence: Natural Language Understanding (NLU)
-## GitHubLink: https://github.com/Nyeinchanaung/NLP-A1-That-s-What-I-LIKE-st125553
-  
+## GitHubLink:
+-  https://github.com/Nyeinchanaung/NLP-A1-That-s-What-I-LIKE-st125553
+
+## Content
 - [Student Information](#student-information)
 - [Files Structure](#files-structure)
 - [How to run](#how-to-run)
@@ -41,9 +43,17 @@
 
  ## Evaluation
 
+- Model Comparison and Analysis
+
 | Model             | Window Size | Training Loss | Training Time | Semantic Accuracy | Syntactic Accuracy | Similarity (Correlation Score) |
 |-------------------|-------------|---------------|---------------|--------------------|-------------------|-------------------|
 | Skipgram          | 2     | 9.32      | 10 min 18 sec       | 0.00%            | 0.00%           | 0.08   |
 | Skipgram (NEG)    | 2     | 1.23       | 12 min 23 sec       | 0.00%            | 0.00%           | 0.14   |
 | Glove             | 2     | 0.31      | 1 min 12 sec       | 0.00%            | 0.00%           | 0.02   |
-| Glove (Gensim)    | - | -       | -       | 53%            | 55%           | 0.54   |
+| Glove (Gensim)    | - | -       | -       | 53%            | 55%           | 0.58   |
+
+
+| Model             | Skipgram | NEG    |  GloVe   | GloVe (gensim)| Y true |
+|-------------------|----------|---------|---------|---------------|--------|
+| Spearman correlation | 0.08  | 0.14    | 0.0205  | 0.5800        |1       |
+| MSE               | 31.6928  | 29.7797 | 32.2789 | 27.8081       |0       |
