@@ -1,6 +1,7 @@
 # NLP-A1-That-s-What-I-LIKE
-## Assignment 1: That’s What I LIKE
-## AT82.05 Artificial Intelligence: Natural Language Understanding (NLU)
+### Assignment 1: That’s What I LIKE
+### AT82.05 Artificial Intelligence: Natural Language Understanding (NLU)
+
 ## GitHubLink:
 -  https://github.com/Nyeinchanaung/NLP-A1-That-s-What-I-LIKE-st125553
 
@@ -12,9 +13,9 @@
 - [Evaluation](#evaluation)
 
 ## Student Information
- - Name: Nyein Chan Aung
- - ID: st125553
- - Class: DSAI
+ - Name     : Nyein Chan Aung
+ - ID       : st125553
+ - Program  : DSAI
 
 ## Files Structure
 1) The Jupytor notebook files
@@ -43,7 +44,7 @@
 
  ## Evaluation
 
-- Model Comparison and Analysis
+### Model Comparison and Analysis
 
 | Model             | Window Size | Training Loss | Training Time | Semantic Accuracy | Syntactic Accuracy | Similarity (Correlation Score) |
 |-------------------|-------------|---------------|---------------|--------------------|-------------------|-------------------|
@@ -52,7 +53,7 @@
 | Glove             | 2     | 0.31      | 1 min 12 sec       | 0.00%            | 0.00%           | 0.02   |
 | Glove (Gensim)    | - | -       | -       | 53%            | 55%           | 0.58   |
 
-
+### Similarity test report
 | Model             | Skipgram | NEG    |  GloVe   | GloVe (gensim)| Y true |
 |-------------------|----------|---------|---------|---------------|--------|
 | Spearman correlation | 0.08  | 0.14    | 0.0205  | 0.5800        |1       |
