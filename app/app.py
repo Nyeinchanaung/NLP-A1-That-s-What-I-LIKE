@@ -35,9 +35,10 @@ def load_models():
     return model_skipgram, model_neg, model_glove, model_gensim
 
 # Load corpus
-corpus = brown.sents(categories="news")
+# corpus = brown.sents(categories="news")
+corpus = list(brown.sents(categories="news"))
 
-def find_closest_indices_cosine(vector_list, single_vector, k=10):
+def similar_context(vector_list, single_vector, k=10):
     similarities = np.dot(vector_list, single_vector) / (np.linalg.norm(vector_list, axis=1) * np.linalg.norm(single_vector))
     top_indices = np.argsort(similarities)[-k:][::-1]
     return top_indices
@@ -71,7 +72,7 @@ if st.button("Search"):
             corpus_embeds.append(sentence_embeds)
         
         corpus_embeds = np.array(corpus_embeds)
-        result_idxs = find_closest_indices_cosine(corpus_embeds, qsentence_embeds)
+        result_idxs = similar_context(corpus_embeds, qsentence_embeds)
         result = [' '.join(corpus[idx]) for idx in result_idxs]
         
         st.subheader(f"Results using {model_name}:")
