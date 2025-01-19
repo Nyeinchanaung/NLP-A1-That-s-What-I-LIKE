@@ -1,7 +1,7 @@
 # NLP-A1-That-s-What-I-LIKE
-- Assignment 1: That’s What I LIKE
-- AT82.05 Artificial Intelligence: Natural Language Understanding (NLU)
-- GitHubLink: https://github.com/Nyeinchanaung/NLP-A1-That-s-What-I-LIKE-st125553
+## Assignment 1: That’s What I LIKE
+## AT82.05 Artificial Intelligence: Natural Language Understanding (NLU)
+## GitHubLink: https://github.com/Nyeinchanaung/NLP-A1-That-s-What-I-LIKE-st125553
   
 - [Student Information](#student-information)
 - [Files Structure](#files-structure)
