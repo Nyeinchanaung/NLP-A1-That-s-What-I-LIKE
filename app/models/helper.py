@@ -9,7 +9,6 @@ class Skipgram(nn.Module):
         super(Skipgram, self).__init__()
         self.embedding_center  = nn.Embedding(voc_size, emb_size)
         self.embedding_outside = nn.Embedding(voc_size, emb_size)
-
         self.word2index = word2index
     
     def forward(self, center, outside, all_vocabs):

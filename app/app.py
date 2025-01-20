@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pickle
 import torch
-from models.classes import Skipgram, SkipgramNeg, Glove, CustomGensim
+from models.helper import Skipgram, SkipgramNeg, Glove, CustomGensim
 import nltk
 nltk.download('brown')
 from nltk.corpus import brown
@@ -75,6 +75,6 @@ if st.button("Search"):
         result_idxs = similar_context(corpus_embeds, qsentence_embeds)
         result = [' '.join(corpus[idx]) for idx in result_idxs]
         
-        st.subheader(f"Results using {model_name}:")
+        st.subheader(f"Displaying results by using {model_name}:")
         for sent in result:
             st.write(sent)
