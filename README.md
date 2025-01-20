@@ -27,7 +27,7 @@
 - word-test-semantic.txt for semantic data
 - word-test-syntatic.txt for syntatic data
 - wordsim353_sim_rel > wordsim_similarity_goldstandard.txt for similarity testing
-3) 'app' folder  
+3) `app` folder  
 - app.py (streamlit)
 - `models` folder which contains four model exports and their metadata files.
  
@@ -54,22 +54,20 @@
 | Glove (Gensim)    | - | -       | -       | 53%            | 55%           | 0.58   |
 
 ### Report
-#### Observations
-- Training Loss:<br />
-Skipgram (Negative Sampling) achieved a significantly lower training loss (1.23) compared to Skipgram (9.32), showing improved learning efficiency with negative sampling.
+#### Training Loss:
+- Skipgram (Negative Sampling) achieved a significantly lower training loss (1.23) compared to Skipgram (9.32), showing improved learning efficiency with negative sampling.
 GloVe had the lowest loss at 0.31.
-<br />
-- Training Time:<br />
-Skipgram models took over 10 minutes, while GloVe training was the fastest at just over 1 minute.
-<br />
-- Semantic and Syntactic Accuracy:<br />
-Only GloVe (Gensim) showed significant semantic and syntactic accuracy, with 53% and 55%, respectively.
+
+#### Training Time:
+- Skipgram models took over 10 minutes, while GloVe training was the fastest at just over 1 minute.
+
+#### Semantic and Syntactic Accuracy:
+- Only GloVe (Gensim) showed significant semantic and syntactic accuracy, with 53% and 55%, respectively.
 Custom Skipgram and GloVe implementations reported 0% in both categories, indicating limitations in training or dataset coverage for these experiments.
-<br />
-- Similarity Correlation:<br />
-GloVe (Gensim) had the highest similarity correlation (0.58) with human-labeled data, indicating the best performance in capturing word associations.
+
+#### Similarity Correlation:
+- GloVe (Gensim) had the highest similarity correlation (0.58) with human-labeled data, indicating the best performance in capturing word associations.
 Skipgram (NEG) had a moderate score of 0.14, while Skipgram and GloVe scored poorly at 0.08 and 0.02, respectively.
-<br />
 
 ##### Similarity test report
 
@@ -78,16 +76,16 @@ Skipgram (NEG) had a moderate score of 0.14, while Skipgram and GloVe scored poo
 | Spearman correlation | 0.08  | 0.14    | 0.0205  | 0.5800        |1       |
 | MSE               | 31.6928  | 29.7797 | 32.2789 | 27.8081       |0       |
 
-- Spearman Correlation: <br />
- Measures how well the predicted similarities align with human-judged similarities.
- <br />
-- MSE (Mean Squared Error): <br />
-Measures prediction error against human judgment.
-<br />
+#### Spearman Correlation:
+- Measures how well the predicted similarities align with human-judged similarities.
+- MSE (Mean Squared Error): Measures prediction error against human judgment.
 
 ### Webapp Screenshot
-
+#### Skipgram
 ![Skipgram](s1.png)
+#### Skipgram-Neg
 ![Skipgram-Neg](s2.png)
+#### Glove
 ![Glove](s3.png)
+#### Glove-Gensim
 ![Glove-Gensim](s4.png)
