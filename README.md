@@ -58,3 +58,10 @@
 |-------------------|----------|---------|---------|---------------|--------|
 | Spearman correlation | 0.08  | 0.14    | 0.0205  | 0.5800        |1       |
 | MSE               | 31.6928  | 29.7797 | 32.2789 | 27.8081       |0       |
+
+### Webapp Screenshot
+
+![Skipgram](s1.png)
+![Skipgram-Neg](s2.png)
+![Glove](s3.png)
+![Glove-Gensim](s4.png)

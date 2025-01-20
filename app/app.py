@@ -35,8 +35,8 @@ def load_models():
     return model_skipgram, model_neg, model_glove, model_gensim
 
 # Load corpus
-# corpus = brown.sents(categories="news")
-corpus = list(brown.sents(categories="news"))
+corpus = brown.sents(categories="news")
+# corpus = list(brown.sents(categories="news"))
 
 def similar_context(vector_list, single_vector, k=10):
     similarities = np.dot(vector_list, single_vector) / (np.linalg.norm(vector_list, axis=1) * np.linalg.norm(single_vector))
