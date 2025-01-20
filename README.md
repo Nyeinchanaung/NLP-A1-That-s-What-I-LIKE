@@ -53,11 +53,37 @@
 | Glove             | 2     | 0.31      | 1 min 12 sec       | 0.00%            | 0.00%           | 0.02   |
 | Glove (Gensim)    | - | -       | -       | 53%            | 55%           | 0.58   |
 
-### Similarity test report
+### Report
+#### Observations
+- Training Loss:<br />
+Skipgram (Negative Sampling) achieved a significantly lower training loss (1.23) compared to Skipgram (9.32), showing improved learning efficiency with negative sampling.
+GloVe had the lowest loss at 0.31.
+<br />
+- Training Time:<br />
+Skipgram models took over 10 minutes, while GloVe training was the fastest at just over 1 minute.
+<br />
+- Semantic and Syntactic Accuracy:<br />
+Only GloVe (Gensim) showed significant semantic and syntactic accuracy, with 53% and 55%, respectively.
+Custom Skipgram and GloVe implementations reported 0% in both categories, indicating limitations in training or dataset coverage for these experiments.
+<br />
+- Similarity Correlation:<br />
+GloVe (Gensim) had the highest similarity correlation (0.58) with human-labeled data, indicating the best performance in capturing word associations.
+Skipgram (NEG) had a moderate score of 0.14, while Skipgram and GloVe scored poorly at 0.08 and 0.02, respectively.
+<br />
+
+##### Similarity test report
+
 | Model             | Skipgram | NEG    |  GloVe   | GloVe (gensim)| Y true |
 |-------------------|----------|---------|---------|---------------|--------|
 | Spearman correlation | 0.08  | 0.14    | 0.0205  | 0.5800        |1       |
 | MSE               | 31.6928  | 29.7797 | 32.2789 | 27.8081       |0       |
+
+- Spearman Correlation: <br />
+ Measures how well the predicted similarities align with human-judged similarities.
+ <br />
+- MSE (Mean Squared Error): <br />
+Measures prediction error against human judgment.
+<br />
 
 ### Webapp Screenshot
 
